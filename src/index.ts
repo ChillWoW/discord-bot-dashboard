@@ -35,5 +35,3 @@ export const getConfig = async (name: string) => {
 };
 
 startClient();
-
-//Echelon

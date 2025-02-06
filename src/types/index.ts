@@ -13,6 +13,12 @@ export interface Command {
   ) => Promise<void>;
 }
 
+export interface EventProps {
+  name: string;
+  once?: boolean;
+  run: any;
+}
+
 export interface CustomClient extends Client {
   commands: Collection<string, Command>;
 }
